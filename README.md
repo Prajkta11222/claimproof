@@ -12,8 +12,8 @@ A mobile-first web app that helps insured farmers prepare crop-loss evidence wit
 
 | Layer | Technology |
 |---|---|
-| Frontend | React 18 + TypeScript, Vite, Tailwind CSS, TanStack Query |
-| Backend | Python 3.12, FastAPI, Pydantic v2, ReportLab |
+| Frontend | React 19 + TypeScript 7, Vite 8, Tailwind CSS v4, TanStack Query |
+| Backend | Python 3.12+, FastAPI, Pydantic v2, ReportLab |
 | Database | Supabase (PostgreSQL + Auth + Storage) |
 | AI | Google Gemini Vision (advisory, fail-soft) |
 | Weather | Open-Meteo (context only, CC BY 4.0) |
