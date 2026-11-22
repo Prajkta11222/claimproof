@@ -1,0 +1,18 @@
+[extend]
+# Extend default rules
+
+[allowlist]
+description = "Allowlist test fixtures and mock secrets"
+paths = [
+  '''backend/tests/.*''',
+  '''backend/\.env\.example''',
+  '''frontend/\.env\.example''',
+  '''\.env\.example''',
+  '''SPEC\.md''',
+  '''README\.md''',
+]
+stopwords = [
+  "test-secret-for-hs256-with-32bytes!",
+  "YOUR-PROJECT-REF",
+  "placeholder-anon-key",
+]
