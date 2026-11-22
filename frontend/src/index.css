@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply antialiased bg-slate-50 text-gray-900;
+    min-width: 360px;
+  }
+
+  /* Min tap targets for mobile friendly experience */
+  button, a, input, select, textarea {
+    touch-action: manipulation;
+  }
+}

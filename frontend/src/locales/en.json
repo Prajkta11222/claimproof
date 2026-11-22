@@ -1,0 +1,195 @@
+{
+  "common": {
+    "appName": "ClaimProof",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "confirm": "Confirm",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Retry",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit",
+    "disclaimer": "ClaimProof is not an official insurer or government service. Always inform your insurer through official channels.",
+    "close": "Close",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "auth": {
+    "login": "Log In",
+    "signup": "Sign Up",
+    "email": "Email address",
+    "password": "Password",
+    "loginButton": "Log In",
+    "signupButton": "Create Account",
+    "switchToSignup": "New user? Create an account",
+    "switchToLogin": "Already have an account? Log in",
+    "consentText": "ClaimProof prepares evidence for your own use. We store your incident details, photos, and location to generate your evidence pack. We do not store bank account or Aadhaar numbers. Photos may be analyzed by AI (Google Gemini) to provide quality feedback. You can delete your data anytime.",
+    "consentCheckbox": "I understand and agree to the above",
+    "consentRequired": "You must agree to continue",
+    "loginFailed": "Login failed. Check your email and password.",
+    "signupFailed": "Sign up failed. Please try again.",
+    "signupSuccess": "Account created! Check your email to confirm.",
+    "language": "Language"
+  },
+  "language": {
+    "en": "English",
+    "hi": "हिंदी",
+    "mr": "मराठी"
+  },
+  "home": {
+    "title": "My Incidents",
+    "reportNewLoss": "Report New Crop Loss",
+    "noIncidents": "No incidents yet. Report your first crop loss to get started.",
+    "urgentBanner": "Less than 24 hours left to inform your insurer!",
+    "criticalBanner": "Less than 6 hours left! Call 14447 or inform your insurer immediately!",
+    "incidentCard": {
+      "crop": "Crop",
+      "district": "District"
+    }
+  },
+  "incident": {
+    "types": {
+      "hailstorm": "Hailstorm",
+      "inundation_flood": "Inundation / Flood",
+      "landslide": "Landslide",
+      "cloudburst": "Cloudburst",
+      "natural_fire": "Natural Fire",
+      "unseasonal_rain_post_harvest": "Unseasonal Rain (Post-Harvest)",
+      "other": "Other"
+    },
+    "seasons": {
+      "kharif": "Kharif",
+      "rabi": "Rabi",
+      "zaid": "Zaid",
+      "other": "Other"
+    },
+    "steps": {
+      "typeAndTime": "Type & Time",
+      "location": "Location",
+      "cropAndPlot": "Crop & Plot"
+    },
+    "form": {
+      "incidentType": "What happened?",
+      "eventTime": "When did it happen?",
+      "dateOnly": "I only know the date",
+      "dateOnlyHint": "Deadline assumes the earliest time on that day. Enter the exact time if you know it.",
+      "description": "Describe what happened (optional)",
+      "descriptionPlaceholder": "e.g., Hail for 15 minutes in the evening; stalks broken",
+      "cropName": "Crop name",
+      "cropNamePlaceholder": "e.g., Chickpea (gram)",
+      "cropSeason": "Season",
+      "surveyNumber": "Survey / Gat number",
+      "surveyNumberPlaceholder": "e.g., 123/2",
+      "areaAffected": "Affected area (acres)",
+      "policyReference": "Enrollment / Policy number",
+      "policyReferenceHint": "NOT bank or Aadhaar numbers",
+      "district": "District",
+      "state": "State",
+      "village": "Village (optional)",
+      "taluka": "Taluka (optional)",
+      "useMyLocation": "Use My Location",
+      "locationFetching": "Getting location...",
+      "locationDenied": "Location access denied. Enter coordinates manually.",
+      "latitude": "Latitude",
+      "longitude": "Longitude",
+      "scheme": "Scheme",
+      "selectType": "Select incident type",
+      "selectSeason": "Select season"
+    },
+    "created": "Incident reported successfully!",
+    "deleteConfirm": "Are you sure? This will permanently delete this incident and all its photos, intimation records, and reports. This cannot be undone.",
+    "deleteButton": "Delete Incident"
+  },
+  "deadline": {
+    "active": "Time remaining to inform your insurer",
+    "urgent": "Less than 24 hours left to inform your insurer",
+    "critical": "Less than 6 hours left! Act now!",
+    "expired": "The 72-hour window may have passed. Late reports can be rejected, but contact your insurer, bank or agriculture office as soon as possible — and keep collecting evidence.",
+    "hoursRemaining": "{{hours}}h {{minutes}}m remaining",
+    "secondsRemaining": "{{hours}}h {{minutes}}m {{seconds}}s",
+    "deadlineAt": "Deadline: {{time}}",
+    "states": {
+      "ACTIVE": "Active",
+      "URGENT": "Urgent",
+      "CRITICAL": "Critical",
+      "EXPIRED": "Expired"
+    },
+    "rulesNote": "Rules can differ for your scheme or insurer. Treat this as the latest safe time and confirm with your insurer."
+  },
+  "intimation": {
+    "title": "Official Intimation",
+    "stepATitle": "Inform an official channel NOW",
+    "stepADescription": "Call 14447, use the Crop Insurance App, or contact your insurer, bank or agriculture office. Then record it here.",
+    "callHelpline": "Call 14447",
+    "openCropApp": "Open Crop Insurance App",
+    "openPmfby": "pmfby.gov.in",
+    "recordButton": "I did it — Record intimation",
+    "channels": {
+      "crop_insurance_app": "Crop Insurance App",
+      "helpline_14447": "Helpline 14447",
+      "insurer": "Insurer helpline / portal",
+      "bank": "Bank branch",
+      "agri_department": "Agriculture department / district official",
+      "csc": "Common Service Centre (CSC)",
+      "other": "Other"
+    },
+    "channelLabel": "How did you inform?",
+    "intimatedAt": "When did you inform?",
+    "referenceNumber": "Reference / ticket number (optional)",
+    "notes": "Notes (optional)",
+    "guidance": "Keep ready: survey number, crop, affected area, and your enrollment number or bank-account details (enter these only on the official channel; ClaimProof does not store bank or Aadhaar numbers).",
+    "withinDeadline": "Within deadline",
+    "afterDeadline": "After deadline",
+    "recorded": "Intimation recorded",
+    "deleteConfirm": "Delete this intimation record?"
+  },
+  "photos": {
+    "camera": "Camera",
+    "gallery": "Gallery",
+    "shotType": "Photo type",
+    "uploading": "Uploading and checking photo...",
+    "empty": "No photos added yet.",
+    "delete": "Delete photo",
+    "aiObservation": "AI observations — may be wrong",
+    "retryAi": "Retry AI",
+    "retrying": "Retrying...",
+    "types": {
+      "wide": "Wide field",
+      "closeUp": "Close-up",
+      "document": "Document",
+      "other": "Other"
+    }
+  },
+  "dashboard": {
+    "stepB": "Add Photos",
+    "stepBDesc": "Take clear photos of the damage — wide shots and close-ups.",
+    "stepC": "Review Checklist",
+    "stepCDesc": "Check what information is still missing.",
+    "checklistComplete": "Complete",
+    "checklistNeedsAttention": "Needs attention",
+    "checklistReady": "All required evidence is ready.",
+    "stepD": "Generate Report",
+    "stepDDesc": "Create your evidence pack PDF to share with your insurer.",
+    "refreshWeather": "Refresh weather",
+    "generateReport": "Generate PDF",
+    "downloadReport": "Download PDF",
+    "latestReport": "Latest evidence pack:",
+    "notGenerated": "Not generated",
+    "weatherSummary": "Weather: {{precip}} mm precipitation, {{gust}} km/h max gust.",
+    "comingSoon": "Coming in the next update",
+    "deleteIncident": "Delete Incident"
+  },
+  "validation": {
+    "required": "This field is required",
+    "tooLong": "Too long (max {{max}} characters)",
+    "invalidEmail": "Enter a valid email address",
+    "futureEvent": "Event time cannot be in the future",
+    "tooOldEvent": "Event cannot be older than 92 days",
+    "invalidArea": "Area must be greater than 0",
+    "invalidCoordinates": "Enter valid coordinates",
+    "invalidLatitude": "Latitude must be between -90 and 90",
+    "invalidLongitude": "Longitude must be between -180 and 180"
+  }
+}

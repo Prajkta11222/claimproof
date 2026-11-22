@@ -1,0 +1,15 @@
+fastapi==0.165.0
+uvicorn[standard]==0.32.1
+pydantic==2.12.5
+pydantic-settings==2.7.0
+supabase==2.11.0
+PyJWT[crypto]==2.15.1
+cryptography==50.0.2
+httpx==0.28.1
+Pillow==13.0.0
+numpy==2.2.1
+reportlab==4.2.5
+slowapi==0.1.9
+structlog==24.4.0
+python-multipart==0.0.34
+piexif==1.1.3

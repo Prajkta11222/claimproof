@@ -1,0 +1,21 @@
+import { createContext, useContext } from 'react';
+import type { Session, User } from '@supabase/supabase-js';
+
+export interface AuthContextType {
+  user: User | null;
+  session: Session | null;
+  loading: boolean;
+  signIn: (email: string, pass: string) => Promise<{ error: Error | null }>;
+  signUp: (email: string, pass: string) => Promise<{ error: Error | null }>;
+  signOut: () => Promise<void>;
+}
+
+export const AuthContext = createContext<AuthContextType | null>(null);
+
+export function useAuth() {
+  const context = useContext(AuthContext);
+  if (!context) {
+    throw new Error('useAuth must be used within an AuthProvider');
+  }
+  return context;
+}
