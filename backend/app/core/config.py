@@ -25,7 +25,8 @@ class Settings(BaseSettings):
     # Supabase
     supabase_url: str = "https://placeholder.supabase.co"
     supabase_service_role_key: str = (
-        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNvbHZlZCI6ZmFsc2UsInJvbGUiOiJzZXJ2aWNlX3JvbGUifQ.placeholder"
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9."
+        "eyJyZXNvbHZlZCI6ZmFsc2UsInJvbGUiOiJzZXJ2aWNlX3JvbGUifQ.placeholder"
     )
     supabase_storage_bucket: str = "evidence"
     signed_url_ttl_seconds: int = 600
@@ -34,9 +35,7 @@ class Settings(BaseSettings):
     supabase_jwks_url: Optional[str] = (
         "https://placeholder.supabase.co/auth/v1/.well-known/jwks.json"
     )
-    supabase_jwt_secret: Optional[str] = (
-        "local-development-secret-for-jwt-testing-minimum-32bytes!"
-    )
+    supabase_jwt_secret: Optional[str] = "local-development-secret-for-jwt-testing-minimum-32bytes!"
     supabase_jwt_issuer: str = ""
     supabase_jwt_audience: str = "authenticated"
 
@@ -75,22 +74,25 @@ class Settings(BaseSettings):
     @model_validator(mode="after")
     def validate_jwt_config(self) -> Settings:
         if self.app_env == "production":
-            if (
-                not self.supabase_jwks_url or "placeholder" in self.supabase_jwks_url
-            ) and (
-                not self.supabase_jwt_secret
-                or "local-development" in self.supabase_jwt_secret
+            if (not self.supabase_jwks_url or "placeholder" in self.supabase_jwks_url) and (
+                not self.supabase_jwt_secret or "local-development" in self.supabase_jwt_secret
             ):
-                raise ValueError("Either SUPABASE_JWKS_URL or SUPABASE_JWT_SECRET must be set in production (A8)")
+                raise ValueError(
+                    "Either SUPABASE_JWKS_URL or SUPABASE_JWT_SECRET must be set in production (A8)"
+                )
             if (
                 not self.supabase_service_role_key
                 or "placeholder" in self.supabase_service_role_key
                 or "placeholder" in self.supabase_url
             ):
-                raise ValueError("Valid SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY are required in production")
+                raise ValueError(
+                    "Valid SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY are required in production"
+                )
         else:
             if not self.supabase_jwks_url and not self.supabase_jwt_secret:
-                self.supabase_jwt_secret = "local-development-secret-for-jwt-testing-minimum-32bytes!"
+                self.supabase_jwt_secret = (
+                    "local-development-secret-for-jwt-testing-minimum-32bytes!"
+                )
         return self
 
     @model_validator(mode="after")
